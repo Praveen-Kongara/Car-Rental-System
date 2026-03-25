@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Rental UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <h2 class="logo">🚗 RentCar</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#cars">Cars</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<!-- HOME PAGE -->
+<section class="home">
+  <div class="home-content">
+    <h1>Drive Your Dream Car Today</h1>
+    <p>Choose from premium cars at affordable prices</p>
+    <button onclick="goToCars()">Explore Cars</button>
+  </div>
+</section>
+
+<!-- CARS LISTING -->
+<section id="cars" class="cars">
+  <h2>Available Cars</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?car" />
+      <h3>Honda City</h3>
+      <p>₹2000/day</p>
+      <button onclick="book('Honda City')">Book Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?suv" />
+      <h3>Hyundai Creta</h3>
+      <p>₹2500/day</p>
+      <button onclick="book('Creta')">Book Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?jeep" />
+      <h3>Mahindra Thar</h3>
+      <p>₹3000/day</p>
+      <button onclick="book('Thar')">Book Now</button>
+    </div>
+
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
