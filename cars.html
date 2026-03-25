@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cars</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <h2>🚗 RentCar</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="cars.html">Cars</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="cars">
+  <h2>Available Cars</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?car">
+      <h3>Honda City</h3>
+      <p>₹2000/day</p>
+      <button onclick="book('Honda City')">Book</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?suv">
+      <h3>Hyundai Creta</h3>
+      <p>₹2500/day</p>
+      <button onclick="book('Creta')">Book</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?jeep">
+      <h3>Mahindra Thar</h3>
+      <p>₹3000/day</p>
+      <button onclick="book('Thar')">Book</button>
+    </div>
+
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
